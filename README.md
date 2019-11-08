@@ -1,6 +1,4 @@
-## Pleroma-Nginx-Conf
-Configuration of Pleroma Nginx Conf
-
+# Configuration of Pleroma Nginx
 ## Pleroma官方的安装步骤(Debian和Ubuntu系列):
 https://docs.pleroma.social/debian_based_en.html
 
