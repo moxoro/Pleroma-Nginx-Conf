@@ -36,7 +36,6 @@ server {
     }
 }
 
-### Enable SSL session caching for improved performance
 ssl_session_cache shared:ssl_session_cache:10m;
 
 server {
