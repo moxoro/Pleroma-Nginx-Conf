@@ -1,15 +1,15 @@
-# Pleroma-Nginx-Conf
+## Pleroma-Nginx-Conf
 Configuration of Pleroma Nginx Conf
 
-# Pleroma官方的安装步骤(Debian和Ubuntu系列):
+## Pleroma官方的安装步骤(Debian和Ubuntu系列):
 https://docs.pleroma.social/debian_based_en.html
 
-# 因为我是使用宝塔面板(bt.cn)安装的，nginx配置，如果按照Pleroma官方的，会出错。
+## 因为我是使用宝塔面板(bt.cn)安装的，nginx配置，如果按照Pleroma官方的，会出错。
 所以修改了一下。
 主要是根据宝塔提供的免费的Let's Encrypt生成的不同路径的nginx配置，进行了调整。
 另外，由于安装宝塔之后，已经装了Nginx，所以在安装Pleroma过程中，可能会有端口冲突，所以我把127.0.0.1改成了127.0.0.1，把4000端口改成了4001。
 
-# 以下是修改后的(替换掉Your_Domain为实际域名）：
+## 以下是修改后的(替换掉Your_Domain为实际域名）：
 
 ------------------
 
@@ -36,7 +36,7 @@ server {
     }
 }
 
-# Enable SSL session caching for improved performance
+### Enable SSL session caching for improved performance
 ssl_session_cache shared:ssl_session_cache:10m;
 
 server {
